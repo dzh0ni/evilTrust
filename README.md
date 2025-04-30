@@ -1,4 +1,4 @@
-﻿![logo](https://github.com/Dzhoni-Dev/evilTrust/blob/master/images/inicio.png)
+﻿![logo](https://github.com/Dzhoni-Dev/evilTrust/blob/master/Imagenes/inicio.png)
 
 # EvilTrust by s4v1tar :octocat: 
 
