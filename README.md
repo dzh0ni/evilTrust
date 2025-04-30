@@ -1,4 +1,4 @@
-﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/blob/master/images/inicio.png)
+﻿![logo](https://github.com/Dzhoni-Dev/evilTrust/blob/master/images/inicio.png)
 
 # EvilTrust by s4v1tar :octocat: 
 
@@ -122,7 +122,7 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 📧 **Contacto**  
 Si tienes preguntas o sugerencias:  
 - 👥 Contacta a ![s4vitar](https://github.com/s4vitar).  
-- 🐾 Gato, adaptaciones personalizadas.  
+- 👥 Dzhoni-Dev, adaptaciones personalizadas.  
 
 🌐 **Repositorio oficial**  
 ![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
