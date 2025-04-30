@@ -1,131 +1,128 @@
-# evilTrust
+﻿![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/blob/master/images/inicio.png)
 
-<p align="center">
-<img src="images/evil.png"
-	alt="Evil logo"
-	width="200"
-	style="float: left; margin-right: 10px;" />
-</p>
+# EvilTrust by s4v1tar :octocat: 
 
-Herramienta ideal para el despliegue automatizado de un **Rogue AP** con capacidad de selección de plantilla + 2FA.
+## :information_source: Descripción 
+EvilTrust 🕵️‍♂️ es un script avanzado de Bash diseñado para convertir un dispositivo Linux en un punto de acceso malicioso (*rogue AP*), ideal para pruebas de penetración y auditorías de seguridad WiFi. Este script permite capturar credenciales, interceptar tráfico, y realizar ataques de ingeniería social mediante la creación de redes falsas y portales cautivos.  
+
+EvilTrust ideal para el despliegue automatizado de un Rogue AP con capacidad de selección de plantilla + 2FA.
 
 Esta herramienta dispone de varias plantillas a utilizar, incluyendo una opción de plantilla personalizada, donde el atacante es capaz de desplegar su propia plantilla.
 
-**IMPORTANTE**: No es necesario contar con una conexión cableada, por lo que es posible desplegar el ataque desde cualquier lado en cualquier momento.
+IMPORTANTE: No es necesario contar con una conexión cableada, por lo que es posible desplegar el ataque desde cualquier lado en cualquier momento.
 
-**¡AHORA LA HERRAMIENTA CUENTA CON INTERFAZ GRÁFICA!**
+¡AHORA LA HERRAMIENTA CUENTA CON INTERFAZ GRÁFICA!
 
-¿Cómo funciona?
-======
-La herramienta comienza haciendo una comprobación de las utilidades necesarias para desplegar el ataque:
+## :computer: Instalación
+```bash
+cd
+cd Desktop
+sudo git clone https://github.com/s4vitar/evilTrust.git
+cd evilTrust
+sudo chmod +x evilTrust.sh
+sudo mkdir -p /usr/local/share/evilTrust/images
+sudo cp images/evil.png /usr/local/share/evilTrust/images/
+sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
+```
 
-<p align="center">
-<img src="images/inicio.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## :key: Acceso Directo
+```bash
+cd 
+sudo echo "cd && cd Desktop/evilTrust && sudo ./evilTrust.sh -m terminal" > eviltrust
+sudo chmod +x eviltrust
+sudo rm -rf /usr/local/bin/eviltrust
+sudo mv eviltrust /usr/local/bin/
+cd
+```
 
-Una vez pasada la verificación, se listan las interfaces de red disponibles, siendo necesario en este punto seleccionar la interfaz configurada en modo monitor (se configura de manera automática):
+## :package: Paquete
+```bash
+sudo apt-get -y update
+sudo apt-get install -y php
+sudo apt-get install -y dnsmasq
+sudo apt-get install -y hostapd
+```
 
-<p align="center">
-<img src="images/interfaces.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## :computer: Crear Desktop
+```bash
+sudo wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/refs/heads/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
+```
 
-Tras seleccionar la interfaz en modo monitor, será necesario especificar el nombre del punto de acceso que se desee crear así como el canal en el que se desea que opere. Una vez especificado, se configurará la interfaz en modo monitor para que opere como router, asignado como puerta de enlace predeterminada la dirección IP **192.168.1.1**, actuando en modo **DHCP**.
+## :rocket: Modo de Uso
+  
+Al ejecutar el script, selecciona entre los diversos modos de ataque disponibles, como:  
+- Crear un *Rogue AP* con portal cautivo.  
+- Simular redes WiFi conocidas para engañar dispositivos cercanos.  
 
-<p align="center">
-<img src="images/config.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+Ejecuta el script fácilmente ingresando el siguiente comando `eviltrust` en tu terminal y presionando Enter.
 
-En este punto será necesario especificar la plantilla con la que se desea trabajar. Es importante seleccionar una de las plantillas listadas como ejemplo, especificando su nombre tal y como se muestra a continuación:
+```bash
+eviltrust
+```
 
-<p align="center">
-<img src="images/plantilla_000.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+# 🛠️ Demos y Ejemplos
 
-**IMPORTANTE**: Para fijar tu propia plantilla, simplemente crea un directorio en el directorio principal del proyecto y especifica su nombre, la herramienta de manera automática montará el servidor web en dicho directorio. La plantilla cliqq-payload dispone de un APK malicioso, ideal para obtener una sesión Meterpreter una vez la víctima la descargue y la ejecute.
+Aquí tienes algunos ejemplos de uso del script EvilTrust en acción:  
 
-**ANOTACIÓN**: La plantilla 'all_in_one' crea una portal cautivo centralizado para iniciar sesión listando todas las redes sociales.
+### 1️⃣ **Tutorial detallado para el uso del script.
+Captura de credenciales mediante un entorno controlado.  
+![Github - s4vitar](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/blob/master/Tutorial.md/)  
 
-Ya en este punto, se montará el punto de acceso y se dispondrá una ventana a la espera de obtener credenciales:
+> 🌐 **Nota**: Este script debe ser utilizado únicamente con fines éticos y en entornos donde tengas autorización explícita.
 
-<p align="center">
-<img src="images/wait.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## :bookmark_tabs: Notas
+  
+El script es ideal para:  
+- Auditorías de seguridad en redes WiFi.  
+- Simulación de ataques de ingeniería social.  
+- Captura de tráfico en entornos controlados.  
 
-Desde el lado de la víctima, se podrá visualizar el punto de acceso creado. La víctima se conectará al AP (pues todos somos yonkis del WiFi :P) y recibirá el siguiente aviso:
+## :star2: Características 
 
-<p align="center">
-<img src="images/aps.jpg"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+- Automatización total para pruebas de seguridad WiFi.  
+- Soporte para múltiples modos de ataque.  
+- Herramienta liviana y personalizable.  
 
-De manera automática, se abrirá el navegador mostrando la plantilla web configurada en la fase de selección:
+## :hammer_and_wrench: Requisitos
+ 
+- **Sistema Operativo**: Linux (Kali Linux, Raspberry Pi OS, etc.)  
+- **Hardware**: Tarjeta WiFi compatible con modo monitor y AP.  
+- **Dependencias**: 
+  - `php` 
+  - `hostapd`  
+  - `dnsmasq`  
+  - `iptables`  
 
-<p align="center">
-<img src="images/plantilla.jpg"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## 📂 Estructura del Repositorio
 
-La víctima introducirá sus credenciales, pues ve que para continuar navegando es necesario autenticarse bajo la plataforma seleccionada:
+| Icono            | Nombre              | Descripción                               |
+|------------------|---------------------|-------------------------------------------|
+| :file_folder:    | all_in_one          | Plantilla Todo en Uno y mejoras generales. |
+| :file_folder:    | cliqq-payload       | Plantilla para payload APK malicioso.     |
+| :file_folder:    | facebook-login      | Plantilla de Facebook con 2FA operativo. |
+| :file_folder:    | google-login        | Segundo factor de autenticación para Google. |
+| :file_folder:    | images              | Modificaciones e imágenes del proyecto.   |
+| :file_folder:    | optimumwifi         | Plantillas de redes de optimumwifi.       |
+| :file_folder:    | starbucks-login     | Portal de Starbucks con 2FA operativo.    |
+| :file_folder:    | twitter-login       | Plantilla de Twitter con autenticación de dos factores. |
+| :file_folder:    | utilities           | Herramientas de conteo de víctimas conectadas. |
+| :file_folder:    | yahoo-login         | Plantilla de Yahoo con 2FA operativo.     |
+| :page_facing_up: | README.md           | Documentación principal del proyecto.     |
+| :page_facing_up: | Tutorial.md         | Tutorial detallado para el uso del script.|
+| :page_facing_up: | evilTrust.sh        | Script principal con mejoras recientes.   |
 
-<p align="center">
-<img src="images/iniciosesion.jpg"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## :star2: Contribuciones
 
-Una vez introducidas las credenciales, el atacante dispone de sus credenciales:
+Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o encuentras algún problema, siéntete libre de abrir un *pull request* o *issue*.
 
-<p align="center">
-<img src="images/first_step_000.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
+## :warning: Advertencias
 
+- Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
 
-Para no quedarnos cortos, en caso de que la víctima disponga de segundo factor de autenticación configurado, tras introducir sus credenciales, la víctima es redirigida al siguiente portal web:
+📧 **Contacto**  
+Si tienes preguntas o sugerencias:  
+- 👥 Contacta a ![s4vitar](https://github.com/s4vitar).  
+- 🐾 Gato, adaptaciones personalizadas.  
 
-<p align="center">
-<img src="images/sms.jpg"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
-
-¿Por qué?, por lo siguiente. Dado que nosotros como atacantes disponemos de las credenciales de la víctima, de manera inmediata ya estaremos validando sus credenciales desde nuestro navegador. Si la víctima utiliza segundo factor de autenticación, tras iniciar sesión, nos saltará el aviso de que es necesario enviar un SMS al dispositivo móvil o correo electrónico para iniciar sesión.
-
-¿Que la víctima no utiliza segundo factor de autenticación?, no pasa nada, ya tenemos sus credenciales :)
-
-Como esta comprobación puede realizarse manualmente casi de manera inmediata, la víctima quedará a la espera de ese SMS. Por tanto, tras iniciar sesión de nuestro lado y enviar el SMS a la víctima, la víctima introduce el SMS recibido en su dispositivo:
-
-<p align="center">
-<img src="images/sms_code.jpg"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
-
-Y el atacante ahora, dispone del SMS necesario para acceder a su cuenta en ese intento de inicio de sesión:
-
-<p align="center">
-<img src="images/second_step.png"
-        alt="Evil logo"
-        style="float: left; margin-right: 10px;" />
-</p>
-
-Dado que son múltiples plantillas, todos los datos recibidos están distinguidos por etiquetas que relacionan al portal que se está usando.
-
-Requisitos
-======
-Para el correcto despliegue del atacante, simplemente es necesario contar con una tarjeta de red que acepte el modo monitor. El modo monitor se configura de manera automatizada tras la ejecución de la herramienta.
-
-Al presionar la combinación Ctrl+C en cualquier momento, la interfaz de red volverá a su estado normal y todos los archivos temporales creados serán borrados.
+🌐 **Repositorio oficial**  
+![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
