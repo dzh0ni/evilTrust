@@ -70,7 +70,7 @@ Aquí tienes algunos ejemplos de uso del script EvilTrust en acción:
 
 ### 1️⃣ **Tutorial detallado para el uso del script.
 Captura de credenciales mediante un entorno controlado.  
-![Github - s4vitar](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/blob/master/Tutorial.md/)  
+![Github - s4vitar](https://github.com/dzh0ni/evilTrust/blob/master/Tutorial.md/)  
 
 > 🌐 **Nota**: Este script debe ser utilizado únicamente con fines éticos y en entornos donde tengas autorización explícita.
 
