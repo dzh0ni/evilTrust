@@ -18,8 +18,8 @@ La herramienta soporta dos modos de ejecución.
 
 ## :computer: Instalación
 ```bash
-cd
 cd /opt
+sudo rm -rf evilTrust
 sudo git clone https://github.com/s4vitar/evilTrust.git
 cd evilTrust
 sudo chmod +x evilTrust.sh
