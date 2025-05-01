@@ -1,4 +1,4 @@
-﻿![logo](https://github.com/Dzhoni-Dev/evilTrust/blob/master/Imagenes/inicio.png)
+﻿![logo](https://github.com/dzh0ni/evilTrust/blob/master/Imagenes/inicio.png)
 
 # EvilTrust by s4v1tar :octocat: 
 
@@ -11,27 +11,35 @@ Esta herramienta dispone de varias plantillas a utilizar, incluyendo una opción
 
 IMPORTANTE: No es necesario contar con una conexión cableada, por lo que es posible desplegar el ataque desde cualquier lado en cualquier momento.
 
-¡AHORA LA HERRAMIENTA CUENTA CON INTERFAZ GRÁFICA!
+La herramienta soporta dos modos de ejecución.
+
+- 🔧 Modo Terminal (CLI)
+- 🖥️ Modo Gráfico (GUI)
 
 ## :computer: Instalación
 ```bash
 cd
-cd Desktop
+cd /opt
 sudo git clone https://github.com/s4vitar/evilTrust.git
 cd evilTrust
 sudo chmod +x evilTrust.sh
 sudo mkdir -p /usr/local/share/evilTrust/images
-sudo cp images/evil.png /usr/local/share/evilTrust/images/
+sudo cp Imagenes/evil.png /usr/local/share/evilTrust/images/
 sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
+cd
 ```
 
 ## :key: Acceso Directo
 ```bash
 cd 
 sudo echo "cd && cd Desktop/evilTrust && sudo ./evilTrust.sh -m terminal" > eviltrust
-sudo chmod +x eviltrust
+sudo echo "cd && cd Desktop/evilTrust && sudo ./evilTrust.sh -m gui" > eviltrustg
+sudo chmod +x eviltrust eviltrustg
+sudo chmod +x eviltrustg
 sudo rm -rf /usr/local/bin/eviltrust
+sudo rm -rf /usr/local/bin/eviltrustg
 sudo mv eviltrust /usr/local/bin/
+sudo mv eviltrustg /usr/local/bin/
 cd
 ```
 
@@ -45,15 +53,11 @@ sudo apt-get install -y hostapd
 
 ## :computer: Crear Desktop
 ```bash
-sudo wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/evilTrust/refs/heads/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
 ```
 
 ## :rocket: Modo de Uso
   
-Al ejecutar el script, selecciona entre los diversos modos de ataque disponibles, como:  
-- Crear un *Rogue AP* con portal cautivo.  
-- Simular redes WiFi conocidas para engañar dispositivos cercanos.  
-
 Ejecuta el script fácilmente ingresando el siguiente comando `eviltrust` en tu terminal y presionando Enter.
 
 ```bash
@@ -80,13 +84,13 @@ El script es ideal para:
 ## :star2: Características 
 
 - Automatización total para pruebas de seguridad WiFi.  
-- Soporte para múltiples modos de ataque.  
+- Soporte para terminal e interfaz.  
 - Herramienta liviana y personalizable.  
 
 ## :hammer_and_wrench: Requisitos
  
-- **Sistema Operativo**: Linux (Kali Linux, Raspberry Pi OS, etc.)  
-- **Hardware**: Tarjeta WiFi compatible con modo monitor y AP.  
+- **Sistema Operativo**: Linux (Kali Linux, ParotOS, Raspberry Pi OS, etc.)  
+- **Hardware**: Tarjeta WiFi compatible con modo monitor y AP. [Cards and Chipsets](https://github.com/v1s1t0r1sh3r3/airgeddon/wiki/Cards%20and%20Chipsets)  
 - **Dependencias**: 
   - `php` 
   - `hostapd`  
@@ -97,6 +101,8 @@ El script es ideal para:
 
 | Icono            | Nombre              | Descripción                               |
 |------------------|---------------------|-------------------------------------------|
+| :file_folder:    | Imagenes            | Carpeta que contiene imágenes del script en ejecución |
+| :package:        | install.sh          | Script de instalación automatizada |
 | :file_folder:    | all_in_one          | Plantilla Todo en Uno y mejoras generales. |
 | :file_folder:    | cliqq-payload       | Plantilla para payload APK malicioso.     |
 | :file_folder:    | facebook-login      | Plantilla de Facebook con 2FA operativo. |
@@ -121,8 +127,8 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 
 📧 **Contacto**  
 Si tienes preguntas o sugerencias:  
-- 👥 Contacta a ![s4vitar](https://github.com/s4vitar).  
-- 👥 Dzhoni-Dev, adaptaciones personalizadas.  
+- 👥 Contacta a ![s4vitar](https://github.com/s4vitar). 
+- 👥 Dzho0i-Dev, adaptaciones personalizadas.  
 
 🌐 **Repositorio oficial**  
 ![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
