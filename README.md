@@ -53,7 +53,7 @@ sudo apt-get install -y hostapd
 
 ## :computer: Crear Desktop
 ```bash
-sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
 ```
 
 ## :rocket: Modo de Uso
