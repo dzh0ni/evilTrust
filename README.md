@@ -58,10 +58,16 @@ sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/I
 
 ## :rocket: Modo de Uso
   
-Ejecuta el script fácilmente ingresando el siguiente comando `eviltrust` en tu terminal y presionando Enter.
+Ejecuta el script fácilmente ingresando el siguiente comando `eviltrust` o `eviltrustg` en tu terminal y presionando Enter.
 
+**Modo por Terminal**
 ```bash
 eviltrust
+```
+
+**Modo por Gui**
+```bash
+eviltrustg
 ```
 
 # 🛠️ Demos y Ejemplos
@@ -125,10 +131,10 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 
 - Uso Responsable: Este script está diseñado para ser utilizado en dispositivos y redes que te pertenecen o para las que tienes permiso de uso. No lo utilices para actividades no autorizadas.
 
-📧 **Contacto**  
+## :email: **Contacto** 
 Si tienes preguntas o sugerencias:  
-- 👥 Contacta a ![s4vitar](https://github.com/s4vitar). 
-- 👥 Dzho0i-Dev, adaptaciones personalizadas.  
+* :busts_in_silhouette: Contacta a ![s4vitar](https://github.com/s4vitar) - Desarrollador evilTrust
+* :busts_in_silhouette: **Dzh0ni**: [Telegram](https://t.me/Dzh0ni_Dev) - Adaptaciones personalizadas.  
 
 🌐 **Repositorio oficial**  
 ![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
