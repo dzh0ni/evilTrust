@@ -23,9 +23,6 @@ sudo rm -rf evilTrust
 sudo git clone https://github.com/s4vitar/evilTrust.git
 cd evilTrust
 sudo chmod +x evilTrust.sh
-sudo mkdir -p /usr/local/share/evilTrust/images
-sudo cp images/evil.png /usr/local/share/evilTrust/images/
-sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
 cd
 ```
 
@@ -52,6 +49,11 @@ sudo apt-get install -y hostapd
 ```
 
 ## :computer: Crear Desktop
+```bash
+sudo mkdir -p /usr/local/share/evilTrust/images
+sudo cp images/evil.png /usr/local/share/evilTrust/images/
+sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
+```
 ```bash
 sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
 ```
