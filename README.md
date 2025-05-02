@@ -31,7 +31,7 @@ cd
 cd 
 sudo echo "cd && cd /opt/evilTrust && sudo ./evilTrust.sh -m terminal" > eviltrust
 sudo echo "cd && cd /opt/evilTrust && sudo ./evilTrust.sh -m gui" > eviltrustg
-sudo chmod +x eviltrust eviltrustg
+sudo chmod +x eviltrust
 sudo chmod +x eviltrustg
 sudo rm -rf /usr/local/bin/eviltrust
 sudo rm -rf /usr/local/bin/eviltrustg
