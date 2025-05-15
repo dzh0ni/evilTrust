@@ -23,7 +23,7 @@ sudo rm -rf evilTrust
 sudo git clone https://github.com/s4vitar/evilTrust.git
 cd evilTrust
 sudo chmod +x evilTrust.sh
-cd
+ls -ltha
 ```
 
 ## :key: Acceso Directo
@@ -60,7 +60,7 @@ sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/crea
 
 ## :computer: Instalación en una Línea
 ```bash
-sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/main/install.sh -O - | sudo bash && sudo rm -rf wget-log*
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/install.sh -O - | sudo bash && sudo rm -rf wget-log*
 ```
 
 ## :rocket: Modo de Uso
