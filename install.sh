@@ -5,7 +5,7 @@ sudo rm -rf evilTrust
 sudo git clone https://github.com/s4vitar/evilTrust.git
 cd evilTrust
 sudo chmod +x evilTrust.sh
-cd
+ls -ltha
 
 cd
 sudo echo "cd && cd /opt/evilTrust && sudo ./evilTrust.sh -m terminal" > eviltrust
