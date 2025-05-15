@@ -51,7 +51,7 @@ sudo apt-get install -y hostapd
 ## :computer: Crear Desktop
 ```bash
 sudo mkdir -p /usr/local/share/evilTrust/images
-sudo cp images/evil.png /usr/local/share/evilTrust/images/
+sudo cp /opt/evilTrust/images/evil.png /usr/local/share/evilTrust/images/
 sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
 ```
 ```bash
@@ -136,7 +136,7 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 ## :email: **Contacto** 
 Si tienes preguntas o sugerencias:  
 * :busts_in_silhouette: Contacta a ![s4vitar](https://github.com/s4vitar) - Desarrollador evilTrust
-* :busts_in_silhouette: **Dzh0ni**: [Telegram](https://t.me/Dzh0ni_Dev) - Adaptaciones personalizadas.  
+* :busts_in_silhouette: **Dzh0ni**: [Telegram](https://t.me/Dzh0ni_Dev) - Adaptacion README.md 
 
 🌐 **Repositorio oficial**  
 ![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
