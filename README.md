@@ -58,6 +58,11 @@ sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
 sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
 ```
 
+## :computer: Instalación en una Línea
+```bash
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/main/install.sh -O - | sudo bash && sudo rm -rf wget-log*
+```
+
 ## :rocket: Modo de Uso
   
 Ejecuta el script fácilmente ingresando el siguiente comando `eviltrust` o `eviltrustg` en tu terminal y presionando Enter.
