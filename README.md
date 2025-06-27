@@ -45,11 +45,11 @@ Captura de credenciales mediante un entorno controlado.
 
 ### 2️⃣ **Configuración de un Rogue AP con portal cautivo falso**  
 Captura de credenciales mediante un entorno controlado.  
-![Youtube Tech_Support404](https://www.youtube.com/watch?v=SKeUYUkR0U4)  
+[Youtube Tech_Support404](https://www.youtube.com/watch?v=SKeUYUkR0U4)  
 
 ### 3️⃣ **Simulación de redes WiFi conocidas en vivo** 
 Captura de credenciales mediante un entorno controlado.  
-![Facebook - s4vitar](https://www.facebook.com/zerosecinfo/videos/eviltrust-herramienta-ofensiva/2445107195742419/) 
+[Facebook - s4vitar](https://www.facebook.com/zerosecinfo/videos/eviltrust-herramienta-ofensiva/2445107195742419/) 
 
 > 🌐 **Nota**: Este script debe ser utilizado únicamente con fines éticos y en entornos donde tengas autorización explícita.
 
