@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-ICON_SOURCE="images/evil.png"
+ICON_SOURCE="/opt/evilTrust/images/evil.png"
 ICON_DEST="/usr/local/share/evilTrust/images"
 ICON_PATH="$ICON_DEST/evil.png"
 
