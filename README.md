@@ -98,8 +98,8 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar este script o e
 
 ## :email: **Contacto** 
 Si tienes preguntas o sugerencias:  
-* :busts_in_silhouette: Contacta a ![s4vitar](https://github.com/s4vitar) - Desarrollador evilTrust
-* :busts_in_silhouette: **Dzh0ni**: [Telegram](https://t.me/Dzh0ni_Dev) - Adaptacion README.md 
+* :busts_in_silhouette: *s4vitar*: ![Github](https://github.com/s4vitar) - Desarrollador evilTrust
+* :busts_in_silhouette: **dZh0ni**: ![Telegram](https://t.me/dZh0ni_Dev) - Adaptacion README.md 
 
 🌐 **Repositorio oficial**  
 ![EvilTrust GitHub](https://github.com/s4vitar/evilTrust)
