@@ -18,7 +18,7 @@ La herramienta soporta dos modos de ejecución.
 
 ## :computer: Instalación en una Línea (Solo script)
 ```bash
-sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/install.sh -O - | sudo bash && sudo rm -rf wget-log*
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/install.sh -O install.sh && sed -i 's/\r$//' install.sh && chmod +x install.sh && sudo ./install.sh && rm -rf wget-log*
 ```
 
 ## :rocket: Modo de Uso
