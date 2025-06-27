@@ -18,7 +18,7 @@ La herramienta soporta dos modos de ejecución.
 
 ## :computer: Instalación en una Línea (Solo script)
 ```bash
-sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/install.sh -O install.sh && sed -i 's/\r$//' install.sh && chmod +x install.sh && sudo ./install.sh && rm -rf wget-log*
+sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/refs/heads/master/install.sh -O install.sh && chmod +x install.sh && sudo ./install.sh && rm -rf wget-log*
 ```
 
 ## :rocket: Modo de Uso
@@ -81,7 +81,7 @@ El script es ideal para:
 | Icono            | Nombre              | Descripción                               |
 |------------------|---------------------|-------------------------------------------|
 | :file_folder:    | Imagenes            | Carpeta que contiene imágenes del script en ejecución |
-| :package:        | install.sh          | Script de instalación automatizada |
+| :file_folder:    | Install        | Carpeta para scripts de instalación       |
 | :file_folder:    | all_in_one          | Plantilla Todo en Uno y mejoras generales. |
 | :file_folder:    | cliqq-payload       | Plantilla para payload APK malicioso.     |
 | :file_folder:    | facebook-login      | Plantilla de Facebook con 2FA operativo. |
@@ -92,9 +92,11 @@ El script es ideal para:
 | :file_folder:    | twitter-login       | Plantilla de Twitter con autenticación de dos factores. |
 | :file_folder:    | utilities           | Herramientas de conteo de víctimas conectadas. |
 | :file_folder:    | yahoo-login         | Plantilla de Yahoo con 2FA operativo.     |
+| :page_facing_up: | LICENSE             | Archivo de licencia del proyecto          |
 | :page_facing_up: | README.md           | Documentación principal del proyecto.     |
 | :page_facing_up: | Tutorial.md         | Tutorial detallado para el uso del script.|
 | :page_facing_up: | evilTrust.sh        | Script principal con mejoras recientes.   |
+| :package:        | install.sh          | Script de instalación automatizada |
 
 ## :star2: Contribuciones
 
