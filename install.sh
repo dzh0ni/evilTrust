@@ -1,38 +1,47 @@
 #!/bin/bash
+set -e
 
-## :computer: InstalaciÃ³n
+echo "Instalando evilTrust..."
 
-cd /opt
-sudo rm -rf evilTrust
-sudo git clone https://github.com/s4vitar/evilTrust.git
-cd evilTrust
+# 1. Clonar el repositorio en /opt
+sudo rm -rf /opt/evilTrust
+sudo git clone https://github.com/s4vitar/evilTrust.git /opt/evilTrust
+cd /opt/evilTrust
 sudo chmod +x evilTrust.sh
-ls -ltha
 
-## :key: Acceso Directo
+# 2. Crear carpeta para iconos e imágenes
+sudo mkdir -p /usr/local/share/evilTrust/images
+if [ -f images/evil.png ]; then
+  sudo cp images/evil.png /usr/local/share/evilTrust/images/
+  sudo chmod 644 /usr/local/share/evilTrust/images/evil.png
+fi
 
-cd 
-sudo echo "cd && cd /opt/evilTrust && sudo ./evilTrust.sh -m terminal" > eviltrust
-sudo echo "cd && cd /opt/evilTrust && sudo ./evilTrust.sh -m gui" > eviltrustg
-sudo chmod +x eviltrust
-sudo chmod +x eviltrustg
-sudo rm -rf /usr/local/bin/eviltrust
-sudo rm -rf /usr/local/bin/eviltrustg
-sudo mv eviltrust /usr/local/bin/
-sudo mv eviltrustg /usr/local/bin/
-cd
+# 3. Crear accesos directos CLI y GUI
+cat << 'EOF' | sudo tee /usr/local/bin/eviltrust > /dev/null
+#!/bin/bash
+cd /opt/evilTrust && exec sudo ./evilTrust.sh -m terminal
+EOF
+sudo chmod +x /usr/local/bin/eviltrust
 
-## :package: Paquete
+cat << 'EOF' | sudo tee /usr/local/bin/eviltrustg > /dev/null
+#!/bin/bash
+cd /opt/evilTrust && exec sudo ./evilTrust.sh -m gui
+EOF
+sudo chmod +x /usr/local/bin/eviltrustg
 
-sudo apt-get -y update
-sudo apt-get install -y php
-sudo apt-get install -y dnsmasq
-sudo apt-get install -y hostapd
+# 4. Instalar dependencias necesarias
+sudo apt-get update
+sudo apt-get install -y php dnsmasq hostapd iptables
 
-## :computer: Crear Desktop
+# 5. Consejos antes de usar
+echo "Si usas systemd-resolved, puedes detenerlo con:"
+echo "  sudo systemctl stop systemd-resolved"
+echo "Si tienes apache2 activo, puedes detenerlo con:"
+echo "  sudo systemctl stop apache2"
+echo "Asegúrate de usar el nombre correcto de tu interfaz Wi-Fi (ejemplo: wlan0)"
 
-# Nombre de la aplicaciÃƒÂ³n
-
+# 6. Instalar icono y acceso directo gráfico
 sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/setup_icon.sh -O - | sudo bash && sudo rm -rf wget-log*
-
 sudo wget https://raw.githubusercontent.com/dzh0ni/evilTrust/master/Install/crear_evilTrust_desktop.sh -O - | sudo bash && sudo rm -rf wget-log*
+
+echo "Instalación completada. Usa 'eviltrust' o 'eviltrustg' para ejecutarlo."
