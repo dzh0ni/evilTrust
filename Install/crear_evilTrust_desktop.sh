@@ -25,7 +25,7 @@ create_desktop_file() {
     local file_path="$1"
     echo "$DESKTOP_ENTRY" | sudo tee "$file_path" > /dev/null
     sudo chmod 644 "$file_path"
-    echo "¡El archivo .desktop en $file_path se ha creado exitosamente!"
+    echo "Â¡El archivo .desktop en $file_path se ha creado exitosamente!"
 }
 
 create_desktop_file "$APPLICATIONS_DESKTOP_FILE"
@@ -34,4 +34,5 @@ create_desktop_file "$KALI_MENU_DESKTOP_FILE"
 sudo update-desktop-database
 sudo updatedb
 
-echo "Todos los archivos .desktop han sido creados y la base de datos del menú ha sido actualizada."
+echo "Todos los archivos .desktop han sido creados y la base de datos del menÃº ha sido actualizada."
+

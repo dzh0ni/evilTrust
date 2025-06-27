@@ -14,7 +14,7 @@ if [ -f "$ICON_SOURCE" ]; then
     echo "Copiando $ICON_SOURCE a $ICON_DEST"
     sudo cp "$ICON_SOURCE" "$ICON_DEST"
 else
-    echo "Error: No se encontró el archivo $ICON_SOURCE"
+    echo "Error: No se encontrÃ³ el archivo $ICON_SOURCE"
     exit 1
 fi
 
@@ -24,7 +24,7 @@ sudo chmod 644 "$ICON_PATH"
 
 # Confirmar resultado
 if [ -f "$ICON_PATH" ]; then
-    echo "¡Imagen instalada correctamente en $ICON_PATH!"
+    echo "Â¡Imagen instalada correctamente en $ICON_PATH!"
 else
     echo "Error: No se pudo instalar la imagen."
     exit 1
